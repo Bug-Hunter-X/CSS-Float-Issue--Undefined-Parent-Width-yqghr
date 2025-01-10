@@ -1,0 +1,14 @@
+Here's how to fix the layout using flexbox:
+
+```css
+div {
+  width: 50%;
+  box-sizing: border-box; /* fix potential padding/border issues */
+}
+
+.parent {
+  display: flex;
+}
+```
+
+Adding `display: flex` to the parent container will distribute its children's width according to the specified width of each child, making the layout predictable and consistent across browsers.  The `box-sizing: border-box` property ensures that padding and border are included within the 50% width calculation.
